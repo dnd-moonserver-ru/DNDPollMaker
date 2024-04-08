@@ -64,7 +64,7 @@ async def command_poll(message: Message) -> None:
 
     options = list()
     date_current = date_start
-    while date_current <= date_end:
+    while date_current < date_end:
         date_current += datetime.timedelta(days=1)
         options.append(date_current.strftime("%d.%m.%y (%A)"))
 
