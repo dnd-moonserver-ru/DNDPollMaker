@@ -64,9 +64,9 @@ async def command_poll(message: Message) -> None:
 
     options = list()
     date_current = date_start
-    while date_current < date_end:
-        date_current += datetime.timedelta(days=1)
+    while date_current <= date_end:
         options.append(date_current.strftime("%d.%m.%y (%A)"))
+        date_current += datetime.timedelta(days=1)
 
     await message.reply_poll(
         question=bundle.get("pollTitle").format(message.from_user.full_name),
