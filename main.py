@@ -14,8 +14,8 @@ from aiogram.types import Message
 from aiogram.utils.markdown import hbold
 
 # Bot token can be obtained via https://t.me/BotFather
-TOKEN = getenv("DND_POOL_MAKER_BOT_TOKEN")
-LOCALE = getenv("DND_POOL_MAKER_LOCALE")
+TOKEN = getenv("DND_POLL_MAKER_BOT_TOKEN")
+LOCALE = getenv("DND_POLL_MAKER_LOCALE")
 
 locale.setlocale(locale.LC_TIME, LOCALE)
 bundle = rb.get_bundle("resources/messages", LOCALE)
