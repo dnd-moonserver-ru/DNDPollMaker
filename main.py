@@ -58,7 +58,7 @@ async def command_poll(message: Message) -> None:
 
     print(days)
 
-    if days < 2 or days > 10:
+    if days < 1 or days > 10:
         await message.answer(bundle.get("commandPollOverflow"))
         return
 
